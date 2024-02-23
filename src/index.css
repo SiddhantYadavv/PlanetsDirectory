@@ -1,0 +1,323 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url("../public/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.headingImage{
+  margin-top: 20px;
+width: 200px;
+}
+.heading {
+  font-size: 25px;
+  margin: 14px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+hr {
+  border: 1px solid rgba(255, 255, 255, 0.457); /* Remove default border */
+  margin: 12px 0; /* Add margin for spacing */
+  width: 80%;
+  
+}
+
+.loading{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.natigationButtonLeft{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* font-weight: bolder; */
+  background-color: rgba(255, 255, 255, 0.397);
+  border: 0;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  position: fixed;
+  top: 50%;
+  left: 3%;
+}
+.natigationButtonLeft:hover{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+
+  /* font-weight: bolder; */
+  border: 0;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  position: fixed;
+  top: 50%;
+  left: 3%;
+}
+.natigationButtonRight{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* font-weight: bolder; */
+  background-color: rgba(255, 255, 255, 0.397);
+  border: 0;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  position: fixed;
+  top: 50%;
+  left: 92%;
+}
+.natigationButtonRight:hover{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+
+  /* font-weight: bolder; */
+  border: 0;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  position: fixed;
+  top: 50%;
+  left: 92%;
+}
+.cardsMainDiv {
+  /* background-color: pink; */
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+}
+.cardDiv {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-evenly;
+  background-color: rgba(78, 77, 77, 0.58);
+  border-radius: 10px;
+  width: 200px;
+  height: 290px;
+  margin: 26px;
+  transition: transform 0.3s ease;
+}
+.cardDiv:hover{
+       transform: scale(1.1); /* Scale the element on hover */
+       border: 2px solid rgba(255, 255, 0, 0.747);
+       box-shadow: 0px 0px 40px rgba(209, 255, 26, 0.817);
+  
+}
+.para {
+  display: flex;
+  flex-direction: column;
+  padding: 1px;
+  justify-content: center;
+  align-items: start;
+  /* background-color: aqua; */
+}
+.cardDivHeading{
+  width: 100%;
+  /* text-align: center; */
+  padding: 3px 3px 3px 10px;
+  margin: 0;
+}
+.cardDivPara {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  padding: 3px 3px 3px 10px;
+  margin: 1px;
+  font-size: 14px;
+}
+.cardDivButton {
+  padding: 10px;
+  margin: 0 20% 0 20%;
+  border-radius: 5px;
+  border: 0;
+  font-size: medium;
+
+}
+.cardDivButton:hover {
+  padding: 10px;
+  margin: 0 20% 0 20%;
+  border-radius: 5px;
+  border: 0;
+  font-size: medium;
+  cursor: pointer;
+  background-color: rgba(255, 255, 90, 0.817);
+}
+.cardsInfoMainDiv{
+  /* height: 100vh; */
+  /* width: 100%;
+  position: fixed;
+  z-index: 1; */
+  background-color: rgba(0, 0, 0, 0.683);
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+ 
+}
+/* .infoSubDiv{
+
+} */
+.closeBtnDiv{
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 20px;
+}
+.crossBtn{
+  color: rgba(203, 203, 203, 0.553);
+  font-size: 30px;
+  cursor: pointer;
+  
+}
+.crossBtn:hover{
+  color: white;
+  cursor: pointer;
+  box-shadow: 0px 0px 40px rgb(209, 255, 26);
+  background-color: rgba(255, 255, 111, 0.23);
+  
+}
+.infoInnerDiv{
+  height: 80%;
+  width: 80%;
+  background-color: rgb(214, 214, 214);
+  box-shadow: 0px 0px 50px rgb(209, 255, 26);
+  color: black;
+  border-radius: 10px;
+  position: absolute;
+  top: 9%;
+  left:10%;
+}
+.infoHeading{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.residentsDiv{
+  height: 300px;
+  /* background-color: red; */
+  display: flex;
+  overflow-x: scroll;
+  align-items: center;
+  padding: 1px 20px;
+
+}
+.residentCard{
+  width: 200px;
+  height: 250px;
+  background-color: aliceblue;
+  margin: 5px;
+  border-radius: 10px;
+  padding: 9px;
+  transition: transform 0.3s ease;
+
+}
+.residentCard:hover{
+  transform: scale(1.04); /* Scale the element on hover */
+  border: 1px solid rgb(255, 255, 28);
+  box-shadow: 0px 0px 10px rgb(209, 255, 26);
+
+
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+/* ================================Styling for Mobile======================================================= */
+
+
+
+@media only screen and (max-width: 500px) {
+ 
+
+.natigationButtonRight{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* font-weight: bolder; */
+  background-color: rgba(255, 255, 255, 0.397);
+  border: 0;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  position: fixed;
+  top: 50%;
+  left: 88%;
+}
+.natigationButtonRight:hover{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+
+  /* font-weight: bolder; */
+  border: 0;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  position: fixed;
+  top: 50%;
+  left: 88%;
+}
+
+.crossBtn{
+  color: rgb(203, 203, 203);
+  font-size: 30px;
+  cursor: pointer;
+  
+}
+
+.infoInnerDiv{
+  height: 52%;
+  width: 80%;
+  background-color: rgb(214, 214, 214);
+  box-shadow: 0px 0px 50px rgb(209, 255, 26);
+  color: black;
+  border-radius: 10px;
+  position: absolute;
+  top: 20%;
+  left:10%;
+}
+
+
+
+}
