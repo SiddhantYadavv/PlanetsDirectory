@@ -83,7 +83,7 @@ hr {
   height: 35px;
   position: fixed;
   top: 50%;
-  left: 92%;
+  left: 94%;
 }
 .natigationButtonRight:hover{
   cursor: pointer;
@@ -99,10 +99,11 @@ hr {
   height: 35px;
   position: fixed;
   top: 50%;
-  left: 92%;
+  left: 94%;
 }
 .cardsMainDiv {
   /* background-color: pink; */
+  max-width: 1370px;
   padding: 5px;
   display: flex;
   flex-wrap: wrap;
@@ -117,7 +118,7 @@ hr {
   justify-content: space-evenly;
   background-color: rgba(78, 77, 77, 0.58);
   border-radius: 10px;
-  width: 200px;
+  width: 220px;
   height: 290px;
   margin: 26px;
   transition: transform 0.3s ease;
@@ -172,7 +173,7 @@ hr {
   /* width: 100%;
   position: fixed;
   z-index: 1; */
-  background-color: rgba(0, 0, 0, 0.683);
+  background-color: rgba(0, 0, 0, 0.85);
   height: 100vh;
   width: 100%;
   position: fixed;
@@ -205,7 +206,7 @@ hr {
   height: 80%;
   width: 80%;
   background-color: rgb(214, 214, 214);
-  box-shadow: 0px 0px 50px rgb(209, 255, 26);
+  box-shadow: 0px 0px 20px rgb(209, 255, 26);
   color: black;
   border-radius: 10px;
   position: absolute;
@@ -216,35 +217,37 @@ hr {
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
+  margin-top: 50px;
 }
 .residentsDiv{
   height: 300px;
   /* background-color: red; */
   display: flex;
-  overflow-x: scroll;
+  overflow-x: auto;
   align-items: center;
-  padding: 1px 20px;
-
+  padding: 1px 10px;
+  padding-bottom: 20px;
 }
 .residentCard{
-  width: 200px;
-  height: 250px;
+  width: 170px;
+  height: 200px;
   background-color: aliceblue;
-  margin: 5px;
+  margin: 5px 15px;
   border-radius: 10px;
   padding: 9px;
   transition: transform 0.3s ease;
 
 }
 .residentCard:hover{
-  transform: scale(1.04); /* Scale the element on hover */
-  border: 1px solid rgb(255, 255, 28);
-  box-shadow: 0px 0px 10px rgb(209, 255, 26);
+  transform: scale(1.1); /* Scale the element on hover */
+  box-shadow: 0px 0px 10px rgba(69, 69, 69, 0.571);
 
 
 }
 ::-webkit-scrollbar {
   width: 10px;
+  height: 5px;
+  margin: 20px;
 }
 
 ::-webkit-scrollbar-track {
@@ -308,14 +311,14 @@ hr {
 
 .infoInnerDiv{
   height: 52%;
-  width: 80%;
+  width: 88%;
   background-color: rgb(214, 214, 214);
   box-shadow: 0px 0px 50px rgb(209, 255, 26);
   color: black;
   border-radius: 10px;
   position: absolute;
   top: 20%;
-  left:10%;
+  left:6%;
 }
 
 

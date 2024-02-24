@@ -19,7 +19,7 @@ const Resident = (props) => {
   return (
     <div>
        {residentData && (<div className='residentCard'>
-            <h4 style={{textAlign:"center"}}>Resident Info</h4>
+            <h4 style={{textAlign:"center",margin:"10px"}}>Resident Info</h4>
 
             <p>Name: {residentData.name}</p>
             <p>Height: {residentData.height}</p>
